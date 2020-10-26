@@ -1,3 +1,172 @@
+Last login: Mon Oct 26 15:57:23 on console
+ahmedhaddouche@maxime ~ % pwd
+/Users/ahmedhaddouche
+ahmedhaddouche@maxime ~ % ls
+(null)		Documents	Movies		Public
+Applications	Downloads	Music		VirtualBox VMs
+Desktop		Library		Pictures
+ahmedhaddouche@maxime ~ % cd Desktop
+ahmedhaddouche@maxime Desktop % ls
+1doc
+CV_A-HADDOUCHE_Consultant_Cybersécurité.pdf
+CV_Ahmed_HADDOUCHE_DATASCIENTIST_ContratPo.pdf
+Pascal_OC_4.m4a
+TABLEAU auto évaluation.docx
+The Big Book of Machine Learning Use Case.pdf
+_Hi!
+file2
+~$ndamentaux Python - Projet S1-1B.docx
+ahmedhaddouche@maxime Desktop % git init
+Reinitialized existing Git repository in /Users/ahmedhaddouche/Desktop/.git/
+ahmedhaddouche@maxime Desktop % git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    ReadMe.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.ipynb_checkpoints/
+	.localized
+	CV_A-HADDOUCHE_Consultant_Cybersécurité.pdf
+	CV_Ahmed_HADDOUCHE_DATASCIENTIST_ContratPo.pdf
+	Pascal_OC_4.m4a
+	TABLEAU auto évaluation.docx
+	The Big Book of Machine Learning Use Case.pdf
+	_Hi!/
+	~$ndamentaux Python - Projet S1-1B.docx
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ahmedhaddouche@maxime Desktop % git pull origin2 exo
+From https://github.com/Haddouche7/ML_DL
+ * branch            exo        -> FETCH_HEAD
+Already up to date.
+ahmedhaddouche@maxime Desktop % git push origin2 exo
+Everything up-to-date
+ahmedhaddouche@maxime Desktop % 
+ahmedhaddouche@maxime Desktop % git init
+Reinitialized existing Git repository in /Users/ahmedhaddouche/Desktop/.git/
+ahmedhaddouche@maxime Desktop % git commit -m origin2
+On branch master
+Changes not staged for commit:
+	deleted:    ReadMe.md
+
+Untracked files:
+	.ipynb_checkpoints/
+	.localized
+	CV_A-HADDOUCHE_Consultant_Cybersécurité.pdf
+	CV_Ahmed_HADDOUCHE_DATASCIENTIST_ContratPo.pdf
+	Pascal_OC_4.m4a
+	TABLEAU auto évaluation.docx
+	The Big Book of Machine Learning Use Case.pdf
+	_Hi!/
+	~$ndamentaux Python - Projet S1-1B.docx
+
+no changes added to commit
+ahmedhaddouche@maxime Desktop % git commit -m origin3
+On branch master
+Changes not staged for commit:
+	deleted:    ReadMe.md
+
+Untracked files:
+	.ipynb_checkpoints/
+	.localized
+	CV_A-HADDOUCHE_Consultant_Cybersécurité.pdf
+	CV_Ahmed_HADDOUCHE_DATASCIENTIST_ContratPo.pdf
+	Pascal_OC_4.m4a
+	TABLEAU auto évaluation.docx
+	The Big Book of Machine Learning Use Case.pdf
+	_Hi!/
+	~$ndamentaux Python - Projet S1-1B.docx
+
+no changes added to commit
+ahmedhaddouche@maxime Desktop % git banch
+git: 'banch' is not a git command. See 'git --help'.
+
+The most similar command is
+	branch
+ahmedhaddouche@maxime Desktop % git branch
+  exo
+* master
+ahmedhaddouche@maxime Desktop % git checkout exo
+D	ReadMe.md
+Switched to branch 'exo'
+ahmedhaddouche@maxime Desktop % git branch
+* exo
+  master
+ahmedhaddouche@maxime Desktop % git pull origin2 exo
+From https://github.com/Haddouche7/ML_DL
+ * branch            exo        -> FETCH_HEAD
+Already up to date.
+ahmedhaddouche@maxime Desktop % git push origin2 exo 
+Everything up-to-date
+ahmedhaddouche@maxime Desktop % git init
+Reinitialized existing Git repository in /Users/ahmedhaddouche/Desktop/.git/
+ahmedhaddouche@maxime Desktop % gir status
+zsh: command not found: gir
+ahmedhaddouche@maxime Desktop % git status
+On branch exo
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    ReadMe.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.ipynb_checkpoints/
+	.localized
+	CV_A-HADDOUCHE_Consultant_Cybersécurité.pdf
+	CV_Ahmed_HADDOUCHE_DATASCIENTIST_ContratPo.pdf
+	Pascal_OC_4.m4a
+	TABLEAU auto évaluation.docx
+	The Big Book of Machine Learning Use Case.pdf
+	_Hi!/
+	~$ndamentaux Python - Projet S1-1B.docx
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ahmedhaddouche@maxime Desktop % git merge 
+fatal: No remote for the current branch.
+ahmedhaddouche@maxime Desktop % git branch           
+* exo
+  master
+ahmedhaddouche@maxime Desktop % git checkout master  
+D	ReadMe.md
+Switched to branch 'master'
+ahmedhaddouche@maxime Desktop % git branch         
+  exo
+* master
+ahmedhaddouche@maxime Desktop % git merge exo
+Already up to date.
+ahmedhaddouche@maxime Desktop % git init
+Reinitialized existing Git repository in /Users/ahmedhaddouche/Desktop/.git/
+ahmedhaddouche@maxime Desktop % git pull origin2 exo
+From https://github.com/Haddouche7/ML_DL
+ * branch            exo        -> FETCH_HEAD
+Already up to date.
+ahmedhaddouche@maxime Desktop % git push origin2 exo
+Everything up-to-date
+ahmedhaddouche@maxime Desktop % GIT BEANCH
+git: 'BEANCH' is not a git command. See 'git --help'.
+ahmedhaddouche@maxime Desktop % git branch
+  exo
+* master
+ahmedhaddouche@maxime Desktop % gir merge exo
+zsh: command not found: gir
+ahmedhaddouche@maxime Desktop % git merge exo
+Already up to date.
+ahmedhaddouche@maxime Desktop % git pull origin2 exo
+From https://github.com/Haddouche7/ML_DL
+ * branch            exo        -> FETCH_HEAD
+Already up to date.
+ahmedhaddouche@maxime Desktop % git push origin2 exo
+Everything up-to-date
+ahmedhaddouche@maxime Desktop % 
+
 """
 Spyder Editor
 
