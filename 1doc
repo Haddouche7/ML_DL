@@ -1,3 +1,24 @@
+
+
+==========================================================================================
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+==========================================================================================
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+******************************************************************************************
+
+*******************            CECE EST UN TEST SUR 1DOC           *********************
+
+
+******************************************************************************************
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+==========================================================================================
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+==========================================================================================
+
+
+
 """
 Spyder Editor
 
@@ -101,53 +122,3 @@ SV,MK,KNV
 Z,N FZFLJZ
 FBLJZEF
 FF
-
-EFF
-FEFZEFZEFZEF
-DFZEFZ
-FZEF
-ZEFZER
-FZEFZEFZEF
-ZEF
-ZEFZEF
-ZEF
-ZEFZEF
-ZERFZR
-FZRF
-ZERFZR
-FZRF
-ZRVEF
-B
-K7
-K
-2E13
-R4T354Y
-46GH
-GY5
-
-
-Last login: Sun Oct 25 15:24:29 on ttys001
-%                                                                               ahmedhaddouche@maxime ~ % 
-ahmedhaddouche@maxime ~ % 
-ahmedhaddouche@maxime ~ % 
-ahmedhaddouche@maxime ~ % pwd
-/Users/ahmedhaddouche
-ahmedhaddouche@maxime ~ % ls
-(null)		Documents	Movies		Public
-Applications	Downloads	Music		VirtualBox VMs
-Desktop		Library		Pictures
-ahmedhaddouche@maxime ~ % cd Desctop
-cd: no such file or directory: Desctop
-ahmedhaddouche@maxime ~ % ls desktop
-1doc
-CV_A-HADDOUCHE_Consultant_Cybersécurité.pdf
-CV_Ahmed_HADDOUCHE_DATASCIENTIST_ContratPo.pdf
-The Big Book of Machine Learning Use Case.pdf
-Zahir_24_10_2020_1.m4a
-Zahir_24_10_2020_2.m4a
-_Hi!
-file2
-~$ndamentaux Python - Projet S1-1B.docx
-ahmedhaddouche@maxime ~ % git init
-Reinitialized existing Git repository in /Users/ahmedhaddouche/.git/
-ahmedhaddouche@maxime ~ % 
