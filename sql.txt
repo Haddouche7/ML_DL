@@ -1,0 +1,165 @@
+
+
+
+                SQL Structurel Query Language 
+
+
+
+
+
+
+LDD Langage de Définition de Données :  CREATE, DROP, ALTER 
+
+                 CREATE DATABASE CINEMA ;
+                 CREATE DATABASE IF NOT EXIST CINEMA ;
+                 CREATE TABLE REALISATEUR (ID_REALISATEUR INTEGER (11) NOT NULL RIMARY KAY, NOM VARCHAR (16) NOT NULL, PRENOM VARCHAR (16) NOT NULL ;
+
+         ALTER TABLE REALISATEUR ADD_COLUMN AGE INTER (2) ;
+         ALTER TABLE REALISATEUR DROP CLOULM AGE INTERGER (16);
+
+DROP TABLE : Supprime définitevelent la table et BD
+
+CONTRAINTES D'INTEGRITE : inerviennent sur une ou plusieurs colonnes et elles peuvent être les contraintes de PIRMARY KEY, FOREIGN KEY, UNIQUE, NOT NULL, DEFAULT, REFERENCES, CHECK  
+ 
+  CONTRAINTES DE COLONNES  : NULL, NOT NULL, DEFAULT, PRIMERAY KEY, UNIQUE, CHECK
+  
+  CONYTRAINTES DE TABLE : PRIMERAY KEY, FOREIGN KEY, CHECK, UNIQUE 
+ 
+ 
+LMD Langage de Manupilation de Données : SELECT, INSERT TO, SET, LIMIT, UPDATE, DELETE, DISTINCT, WHERE, NULL VALUE, BETWEEN, NOT BETWEEN, OPERATEURS ARITHLETIQUES, LIKE, NOT LIKE, ORDRE BY, 
+
+                 *** Select --- From --- ***
+
+  JOINTURE :
+
+ INNER JOIN JOINTURE INTERNE : Retourne les enregistrements qui appartiennent en même temps aux deux tables, lorsque la condition est VRAI
+
+ OUTER JOIN JOINTURE EXTERNE A GAUCHE A DROITE : Left outer join = left join. Right outer join = right join
+
+ FULL OUTER JOIN = FULL JOIN : consiste à lier les deux tables sur l'ID. Les lignes de la tables 1 et la tabkle 2 prendrons leurs valeurs communes et les lignes de la tables1 qui n'ont pas de conrespendances dans la table2 prendrons la valeur NULL et vis versa pour la table2 i.e les enregistrelents communs prondrons l a même valeurs communes.
+
+
+                 *** Les Sous - Select ***
+
+Les Sous-Interrogations == une requêt imbriquée
+
+   Select * from table1 where condition [opérateur de comparaison =, !=, >,<, >=, <=] (select  .... )
+
+
+  Opérateur logique :
+   
+     IN remplace les un ou plueirus OR
+
+     ANY remplace  AND 
+
+     ALL s'utilise après l'opérateur de comparaison 
+
+
+  Les Fonctions d'Agrégation :
+    
+      Count, AVG , Min, Max, SUM 
+   
+  
+  Opérateurs Ensemblistes :
+
+       Union : concatenation verticale de 2 tables de même nombre et nom de colonnes 
+
+       Union All : sans doublants
+
+       Intersect : non dispo dans tous les SGBD mais peut etre remplacé par la commande select * from Tb1 WHERE EXISTS ( SELZSCT ...)
+
+
+
+       EXCEPT (MINUS) : lignes de tab1 non dispo dans tab2 
+
+  Fonctions :
+
+       Fonction NVL : fonction Oracle Null Value quib peut remplacer uje valeur lulle avec une valeur significative, Select nom, salaire, commision, salaire+NVL (commission, 0) from tab. Pour PostgreSql la commande est COALESCE.
+
+   CONCATENATION : concaténation horizontale entre de 2 ou plusieurs COL dans un SELECT 
+
+         select id, nom ¡¡ ' - ' ¡¡ prenom as 'nom_prenom from tab1
+
+         select id, CONCAT (nom, ' ', prenom) as n_p from tab1
+
+
+   ROUND(n,m) : to round the number to the nearest 
+
+       round(salaire, round(salaire, 2)
+
+   TRUNC () : to TRUNCATE / DELETE the number from some position
+
+   TRUNCATE : Siupprmier les données SANS SUPPRIMER la TABLE elle même  et elle semeblable à DELETE et différente de DROP ===> Purger la table == vider la table 
+           TRUNCATE TABLE nom_table
+
+   CASE .... WHEN .
+   SUSBTR (chaîne, pos, n) : retourner une chaine de caractère commenceant à partuir de la postion pos et contenant n caractères.
+
+     select nom_col SUBSTR (nom_col, 3, 10) from tab1
+
+  UPPER (chaîne)
+
+  LOWER (chaîne)
+
+  LENGTH (chaîne)
+
+  
+  TO_CHAR (col, format)
+
+  
+  LIKE - NOT LIKE :
+
+    LIKE : chercher les enregistments avec % indiquant dont une chaine cmmmence (l%) ou finie (%l)
+
+        select * from table where name_col like 'l%'
+ 
+        select * from table where name_col like '%l'
+
+     NOT LIKE : est la négation de LIKE
+
+  WHERE : requête sur les chaines de caractères
+
+  HAVING : requête sur les variables quantitatives et est utilisé juste après un GPOUP BY
+
+   select id, prenom_client, SUM(tarif), date_achat from table
+
+   GROUP BY prenom_client
+
+  HAVING SUM(tarif) > 40 ;
+
+
+ FONCTION DATE :
+
+   select data_format( date, format)
+
+
+ 
+LCT Langage de Contrôle et de Transaction
+
+
+
+***********************
+
+
+    TRIGGER ==== DECLANCHEUR
+
+               CREATE TRIGGER ===> Déclancheur  
+ 
+  CREATE TRIGGER trigger_name
+
+  (BEFORE | AFTER} {INSERT | UPDATE| DELETE } ON table_name FOR EACH ROW
+
+      CREAT OR REPLACE TRIGGER nom_trigger
+      
+      AFTER INSERT OR UPDATE OR DELETE ON nom_table
+
+      FOR EACH ROW
+
+
+
+
+
+
+
+
+
